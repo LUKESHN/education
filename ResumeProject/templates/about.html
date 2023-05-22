@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock css %}
+
+{% block title %}
+<title>about Me</title>
+
+{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <div class="container bg-secondary text-light  text-center p-2 rounded-4  shadow my-3">
+        <h1 class="display-6">about Me </h1>
+    </div>
+
+    <!-- form div  -->
+    <div class="container">
+        <form action="{% url 'about'%}", method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <h1>lukesh </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro temporibus repudiandae quaerat quis ratione voluptas labore placeat iusto nisi, soluta explicabo. In, eius a quae laborum similique natus perferendis vero quam, esse corrupti eaque earum. Laboriosam laudantium aperiam corporis, quibusdam illo porro aliquam aut fugit rerum repellat enim quae tenetur ab, quam autem soluta consequuntur, ratione quidem! Accusantium ea, consectetur a non eum inventore officiis veritatis et, nostrum voluptate animi! Voluptatum nisi unde, explicabo voluptatem molestiae tempora asperiores mollitia deserunt dolorem consectetur eligendi quam aperiam repellat vitae. Sequi consectetur sint, commodi amet quasi consequatur distinctio voluptates. Mollitia ut porro recusandae molestias rerum? Iste aliquam tenetur vitae sed voluptatem ullam odit in id excepturi laboriosam illo porro eius quasi, officia tempora dignissimos culpa. Itaque adipisci quis obcaecati perferendis saepe accusantium inventore ad quos totam, nulla eum aliquam dolore, quia quisquam ducimus rem illo veritatis libero tempora numquam autem? Amet reiciendis culpa dolore facere? Quae magnam veritatis earum laboriosam laudantium id vel consectetur natus incidunt libero ipsam modi fugiat qui, consequatur tenetur cupiditate molestias officiis enim facere voluptates! Nam eligendi commodi perspiciatis, ducimus ratione cupiditate cumque tenetur. Praesentium architecto odio cumque quas voluptatum temporibus quidem! Vel in illum laudantium error. Voluptate, non.</p>
+            </div>
+
+           
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock body %}

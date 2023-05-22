@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock css %}
+
+{% block title %}
+<title>about Me</title>
+
+{% endblock title %}
+
+{% block body %}
+
+<div class="container">
+    <div class="container bg-secondary text-light  text-center p-2 rounded-4  shadow my-3">
+        <h1 class="display-6">about me </h1>
+    </div>
+
+    <!-- form div  -->
+    <div class="container">
+        <form action="{% url 'about'%}", method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <h1>lukesh</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione fugit at eius voluptatum voluptatem consectetur excepturi repellendus temporibus possimus. Consequatur, voluptate. Atque doloremque beatae voluptatibus ex architecto! Itaque voluptate consectetur facilis quod. Dolorem totam corporis quia atque velit earum dicta veniam placeat adipisci fugit vitae unde aut natus, laborum qui minus exercitationem. Sit, quas delectus. Quod amet perferendis labore reprehenderit praesentium voluptatum alias dolores doloremque, esse sapiente nostrum illo mollitia voluptatibus sint molestiae, pariatur, quis voluptates dolorum provident placeat? Modi veniam eius mollitia nisi asperiores. Deserunt quasi expedita numquam amet hic repellat recusandae earum, delectus molestias nesciunt! Dolores, unde! Eligendi aspernatur voluptatibus laboriosam dolore, ipsum delectus accusantium veritatis facere tenetur incidunt aliquid expedita. Totam laboriosam sapiente harum a. Veritatis, reiciendis vero. Quia autem porro consequuntur praesentium quas quam explicabo repellendus eaque asperiores velit? Dolorem, fuga aut. Obcaecati vero, nulla, fuga sed tenetur iste inventore consectetur repellat molestiae aliquid voluptatem, corporis veniam aliquam. Non, officiis quidem. Porro, doloribus quidem amet minima repudiandae consequuntur dolore consequatur, unde eius deserunt dolorum ut optio nihil harum neque illum molestias maiores id illo, sint sapiente eum ratione ipsam. Fugit eius a asperiores vel recusandae, inventore ea! Perferendis harum quaerat delectus aut reprehenderit ipsam corporis quisquam!</p>
+            </div>
+
+            
+
+        </form>
+    </div>
+</div>
+
+
+
+{% endblock body %}

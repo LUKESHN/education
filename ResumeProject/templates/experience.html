@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock css %}
+
+{% block title %}
+
+{% endblock title %}
+
+{% block body %}
+
+
+<!-- {% for key,value in proj.items %}
+{{key}} {{value}}
+
+{% endfor %} -->
+
+<!-- {{key}} {{value}} -->
+
+<div class="container border-danger bg-primary rounded-4">
+    <div class="display-3 p-1 m-2 border border-3 bg-secondary ">This is Experience Page </div>
+
+</div>
+{% for key,value in exp.items %}
+<div class="container p-1 my-1 bg-danger">
+
+    <div class="display-6  border rounded-3">
+        I have {{value}} Experience in {{key}}
+    </div>
+</div>
+
+{% endfor %}
+
+{% endblock body %}

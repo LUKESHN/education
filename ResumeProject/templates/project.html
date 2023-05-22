@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+{% endblock css %}
+
+{% block title %}
+
+{% endblock title %}
+
+{% block body %}
+
+
+<!-- {% for key,value in proj.items %}
+{{key}} {{value}}
+
+{% endfor %} -->
+{% for key,value in proj.items %}
+  <div class="card mb-3" style="width: 100%;">
+    
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="{% static 'images/hospital.jpg' %}" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{key}}</h5>
+          <p class="card-text">{{value}}</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div><hr>
+      </div>
+    </div>
+    
+  </div>
+  {% endfor %}
+
+ 
+
+
+
+
+
+
+{% endblock body %}

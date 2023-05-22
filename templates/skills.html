@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+{% block css %}
+
+{% endblock css %}
+
+{% block title %}
+<title>SKills - Page</title>
+{% endblock title %}
+
+{% block body %}
+
+    <div class="conatiner bg-secondary p-2 text-center text-light rounded-3 shadow mb-4">
+        <h1 class="display-5 ">Skills Details </h1>
+    </div>
+
+    <!-- content  -->
+    <table class="table">
+            {% for key,value in skills.items %}
+            <tr>
+                <td>{{key}}</td>
+                <td>
+                    <progress class="progress-bar" max="100" value="{{value}}"></progress>
+                </td>
+                <td>{{value}} %</td>
+            </tr>
+            {% endfor %}
+
+        </table>
+
+    </div>
+</div>
+{% endblock body %}
